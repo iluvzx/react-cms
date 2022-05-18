@@ -63,7 +63,7 @@ const MyLayout = () => {
         <div className="user-info">
           <Space size={'middle'}>
             <Avatar src={userStore.userInfo.photo} />
-            <span className="user-name">{userStore.userInfo.name}</span>
+            <span className="user-name">{userStore.userInfo.intro}</span>
             <span className="user-logout">
               <Popconfirm title="你确定要退出吗？" okText="确认" cancelText="取消" onConfirm={onConfirm}>
                 <Button type="primary" danger>退出</Button>
