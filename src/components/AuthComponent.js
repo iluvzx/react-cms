@@ -4,8 +4,6 @@ import { Navigate } from "react-router-dom"
 // 1.判断token是否存在
 // 2.如果存在，直接正常渲染后台页面
 // 3.如果不存在，路由重定向到登录页面
-
-
 // 高阶组件：接收一个组件作为参数，返回一个新的组件
 
 const AuthComponent = ({ children }) => {
@@ -14,11 +12,6 @@ const AuthComponent = ({ children }) => {
   return !token ? <Navigate to={'/login'} replace /> : <>{children}</>
 }
 
-
-// const AuthLogin = ({ children }) => {
-//   const token = getToken()
-//   return token ? <Navigate to={'/login'} replace /> : <>{children}</>
-// }
 
 export {
   AuthComponent,

@@ -20,7 +20,7 @@ export default () => {
     },
     {
       path: '/layout',
-      element: <Navigate to={'home'} />
+      element: <Navigate to={'home'} />,
     },
     {
       path: '/login',
